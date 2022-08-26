@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(to right, rgb(177, 62, 62), rgb(72, 72, 185));
+    color: white;
+}
+.container{
+    width: 95%;
+    margin: auto;
+}
+.nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 25px 0;
+}
+.nav h2{
+    font-size: 2rem;
+}
+.userInput{
+    width: 350px;
+    margin-top: 5px;
+    text-align: center;
+}
+.userInput input{
+    width: 80%;
+    padding: 8px;
+    border: 1px solid lightgray;
+    border-top-left-radius: 5px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.userInput input:focus{
+    box-shadow: 0 0 5px rgb(177, 62, 62);
+    border: 1px solid rgb(177, 62, 62);
+}
+button{
+    width: fit-content;
+    padding: 8px;
+    transition: 1s;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+}
+.to-do-items{
+    width: 500px;
+    margin: auto;
+}
+.item{
+    width: 500px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 2px;
+    padding: 16px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: 1rem;
+    background-color: #fff;
+    color: #454545;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.item:hover{
+    box-shadow: 0 0 20px rgb(177, 62, 62);
+    border: 1px solid rgb(177, 62, 62);
+}
+.item i{
+    cursor: pointer;
+    margin: 0 5px;
+}
+@media(max-width: 768px){
+    .nav{
+        align-items: center;
+        flex-direction: column;
+    }
+    .userInput{
+        width: 100%;
+    }
+    .to-do-items{
+        width: 100%;
+    }
+}
